@@ -1,8 +1,22 @@
-# Deployment to GitHub Pages
+# Deployment Guide
 
-This document explains how to deploy the Credit Card Mastery Flask app to GitHub Pages.
+This document explains how to deploy the Credit Card Mastery Flask app to various platforms.
 
-## Automatic Deployment
+## 🚀 **Current Live Deployment**
+
+**Production URL**: [https://credit-card-date-mastery.onrender.com/](https://credit-card-date-mastery.onrender.com/)
+
+**Platform**: Render.com - Full Flask application with server-side processing
+
+## Deployment Options
+
+### 1. Render (Current Production)
+- **URL**: https://credit-card-date-mastery.onrender.com/
+- **Type**: Full Flask application
+- **Features**: Server-side processing, form handling, JSON data persistence
+- **Deployment**: Automatic from GitHub repository
+
+### 2. GitHub Pages (Static Version)
 
 The repository is configured with GitHub Actions to automatically deploy to GitHub Pages when you push to the `main` branch.
 

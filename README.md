@@ -2,6 +2,15 @@
 
 A **comprehensive Python web application** that calculates critical credit card dates for optimal credit score management with expert-driven strategies and educational content.
 
+## 🚀 **LIVE APP**
+**[https://credit-card-date-mastery.onrender.com/](https://credit-card-date-mastery.onrender.com/)**
+
+### 📱 **Try it now!** 
+- Add your credit cards and get instant closing date calculations
+- Master the Credit Float Strategy with dynamic timelines
+- Optimize your credit score with expert-backed utilization guidance
+- Get personalized payment schedules and credit management tips
+
 ## 🎯 Purpose
 
 This application implements strategies from credit optimization experts to help you:
@@ -228,10 +237,33 @@ This app teaches:
 Based on analysis from:
 - **Credit optimization expert transcript** (526 lines of insights)
 - **SoFi article analysis** on closing dates vs due dates
-- **Industry-standard billing cycle** documentation
-- **FICO scoring model** utilization impact research
+
+## 🌐 Deployment
+
+### Live Application
+**Production URL**: [https://credit-card-date-mastery.onrender.com/](https://credit-card-date-mastery.onrender.com/)
+
+### Deployment Options
+- **Render** (Current): Full Flask app with server-side processing
+- **GitHub Pages**: Static HTML version (automatic deployment)
+- **Railway**: Alternative platform deployment
+- **PythonAnywhere**: Python-focused hosting
+
+See `DEPLOYMENT.md` for detailed deployment instructions.
+
+## 📝 Version History
+
+- **v3.0** - Enhanced closing date education, expert-backed utilization ranges, corrected Credit Float Strategy
+- **v2.0** - Added Credit Float Strategy, enhanced utilization scoring, available balance calculator
+- **v1.0** - Initial release with basic credit card date calculations
 
 ---
+
+## 🎯 **Ready to Master Your Credit Cards?**
+
+**Visit the live app**: [https://credit-card-date-mastery.onrender.com/](https://credit-card-date-mastery.onrender.com/)
+
+Transform your credit score management with expert-backed strategies and precise timing calculations!
 
 **🚀 Ready to master your credit score!** Use this app to implement expert-level credit card strategies with proper closing date understanding and achieve excellent credit scores through strategic timing.
 
