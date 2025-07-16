@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Dover",
+    "credit_limit": 10000.0,
+    "current_balance": 100.0,
+    "utilization": 1.0,
+    "available_balance": {
+      "actual_available": 9900.0,
+      "target_available_10_percent": 9000.0,
+      "target_available_30_percent": 7000.0,
+      "need_to_pay_10_percent": 0,
+      "need_to_pay_30_percent": 0
+    },
+    "dates": {
+      "cycle_start": "May 27, 2025",
+      "cycle_end": "Jun 28, 2025",
+      "closing_date": "Jun 28, 2025",
+      "reporting_date": "Jun 28, 2025",
+      "pay_by_date": "Jun 25, 2025",
+      "can_use_funds": "Jul 01, 2025",
+      "due_date": "Jul 23, 2025",
+      "next_cycle_start": "Jun 29, 2025",
+      "next_cycle_end": "Jul 31, 2025",
+      "next_closing_date": "Jul 31, 2025",
+      "next_reporting_date": "Jul 31, 2025",
+      "next_pay_by_date": "Jul 28, 2025",
+      "next_can_use_funds": "Aug 03, 2025",
+      "next_due_date": "Aug 25, 2025",
+      "previous_month": "May 2025",
+      "current_month": "May - June 2025",
+      "following_month": "July 2025"
+    }
+  }
+]
