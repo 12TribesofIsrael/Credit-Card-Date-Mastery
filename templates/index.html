@@ -1172,24 +1172,148 @@
                 font-size: 2rem;
             }
 
-            /* Advanced Section Mobile */
-            .step-card {
-                padding: 20px;
+            /* Advanced Strategy Section - Modern Design */
+            .advanced-strategy-section {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+                border-radius: 20px;
+                padding: 40px;
+                margin: 40px 0;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .advanced-strategy-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+                pointer-events: none;
+            }
+
+            .advanced-strategy-section h3 {
+                color: white;
+                font-size: 2.5em;
+                margin-bottom: 30px;
+                text-align: center;
+                text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+                font-weight: 700;
+            }
+
+            .advanced-strategy-section .strategy-explanation {
+                background: rgba(255,255,255,0.95);
+                border-radius: 15px;
+                padding: 30px;
+                margin-bottom: 30px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                position: relative;
+                z-index: 1;
+            }
+
+            .advanced-strategy-section .strategy-header h4 {
+                color: #2c3e50;
+                font-size: 1.6em;
                 margin-bottom: 15px;
+                font-weight: 600;
             }
 
-            .step-number {
-                width: 40px;
-                height: 40px;
-                font-size: 1.1rem;
+            .advanced-strategy-section .strategy-header p {
+                color: #34495e;
+                font-size: 1.1em;
+                line-height: 1.6;
+                margin-bottom: 20px;
             }
 
-            .step-content h5 {
-                font-size: 1.1rem;
+            .advanced-strategy-section .strategy-steps {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
             }
 
-            .strategy-example {
-                padding: 20px;
+            .advanced-strategy-section .step-card {
+                background: rgba(255,255,255,0.9);
+                border-radius: 15px;
+                padding: 25px;
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+                transition: all 0.3s ease;
+                border: 2px solid transparent;
+                position: relative;
+                z-index: 1;
+            }
+
+            .advanced-strategy-section .step-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+                border-color: rgba(255,255,255,0.3);
+            }
+
+            .advanced-strategy-section .step-number {
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 1.2em;
+                box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+                flex-shrink: 0;
+            }
+
+            .advanced-strategy-section .step-content h5 {
+                color: #2c3e50;
+                font-size: 1.3em;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            .advanced-strategy-section .step-content p {
+                color: #34495e;
+                line-height: 1.6;
+                font-size: 1.05em;
+            }
+
+            /* Advanced Section Mobile */
+            @media (max-width: 768px) {
+                .advanced-strategy-section {
+                    padding: 25px;
+                    margin: 25px 0;
+                }
+
+                .advanced-strategy-section h3 {
+                    font-size: 1.8em;
+                }
+
+                .advanced-strategy-section .strategy-explanation {
+                    padding: 20px;
+                }
+
+                .advanced-strategy-section .step-card {
+                    padding: 20px;
+                    gap: 15px;
+                }
+
+                .advanced-strategy-section .step-number {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1em;
+                }
+
+                .advanced-strategy-section .step-content h5 {
+                    font-size: 1.1em;
+                }
+
+                .strategy-example {
+                    padding: 20px;
+                }
             }
         }
 
@@ -1474,7 +1598,7 @@
     <div class="container">
         <header>
             <div class="logo-container">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzY2N2VlYTtzdG9wLW9wYWNpdHk6MSIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNzY0YmEyO3N0b3Atb3BhY2l0eToxIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ1IiBmaWxsPSJ1cmwoI2dyYWQxKSIvPgo8cGF0aCBkPSJNMzAgMjBRMzUgMTUgNDAgMjBRNTAgMTUgNjAgMjBRNzAgMTUgNzAgMzBRNzAgNDAgNjAgNDBRNTAgNDAgNDAgNDBRMzAgNDAgMzAgMzBaIiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+CjxwYXRoIGQ9Ik0zMCA1MEg3MFY3MEgzMFY1MFoiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjkiLz4KPHA+CjxwYXRoIGQ9Ik0zNSA1NUM0MCA1MCA0NSA1NSA1MCA1MFE1NSA1NSA2MCA1MFE2NSA1NSA2NiA2MFE2NSA2NSA2MCA2NVE1NSA2NSA1MCA2NVE0NSA2NSA0MCA2NVEzNSA2NSAzNSA2MFoiIGZpbGw9IiM5OTFiMWIiLz4KPHA+CjxwYXRoIGQ9Ik0zNSA3NUg2NVY4MEgzNVY3NVoiIGZpbGw9IiM5OTFiMWIiLz4KPHA+CjxwYXRoIGQ9Ik0zNSA4NEg2NVY4NkgzNVY4NFoiIGZpbGw9IiM5OTFiMWIiLz4KPHA+CjwvZz4KPC9zdmc+" alt="BMB AI Automations Logo" class="logo">
+                <img src="BMB AI Automations Logo.png" alt="BMB AI Automations Logo" class="logo">
                 <div class="header-text">
                     <h1>💳 Credit Card Utilization Mastery</h1>
                     <p class="subtitle">Calculate Critical Dates for Optimal Credit Score Management</p>
@@ -1896,7 +2020,7 @@
         {% endif %}
 
         <!-- Advanced Strategy Section -->
-        <div class="education-section">
+        <div class="advanced-strategy-section">
             <h3>🚀 Advanced Hide Utilization Credit Mastery Strategy APP</h3>
             
             <div class="strategy-explanation">
