@@ -1053,6 +1053,331 @@
                 font-size: 0.9rem;
                 text-align: center;
             }
+
+            /* Strategy Section Mobile */
+            .strategy-container {
+                padding: 15px;
+            }
+
+            .strategy-header h4 {
+                font-size: 1.2rem;
+            }
+
+            .strategy-explanation, .strategy-benefits, .strategy-warning {
+                margin-bottom: 20px;
+            }
+
+            /* Amount Display Mobile */
+            .amount-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .amount-item {
+                padding: 12px;
+            }
+
+            .amount-item strong {
+                font-size: 1rem;
+            }
+
+            /* Pro Tip Mobile */
+            .protip-container {
+                padding: 15px;
+            }
+
+            .protip-header {
+                padding: 15px;
+            }
+
+            .protip-header h4 {
+                font-size: 1.1rem;
+            }
+
+            .institutions-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .institution-item {
+                padding: 15px;
+            }
+        }
+
+        /* Strategy Section Styles */
+        .strategy-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .strategy-header {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .strategy-header h4 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .strategy-header p {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .amount-display {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .card-amounts {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card-amounts h5 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .critical-timing {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .critical-timing p {
+            color: white;
+            font-size: 1.1rem;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .amount-item {
+            background: rgba(255,255,255,0.95);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid;
+        }
+
+        .amount-item.excellent {
+            border-color: #4caf50;
+            background: linear-gradient(135deg, #e8f5e8 0%, #ffffff 100%);
+        }
+
+        .amount-item.warning {
+            border-color: #ff9800;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%);
+        }
+
+        .amount-item strong {
+            color: #333;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .amount-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .no-cards-message {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px dashed #667eea;
+            margin: 20px 0;
+        }
+
+        .no-cards-message p {
+            color: #333;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .strategy-explanation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .strategy-step {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .strategy-step:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .strategy-step h5 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .strategy-step p {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .strategy-benefits {
+            background: #e8f5e8;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #4caf50;
+            margin-bottom: 25px;
+        }
+
+        .strategy-benefits h5 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .strategy-benefits ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .strategy-benefits li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .strategy-benefits li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .strategy-warning {
+            background: #fff3cd;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #ffc107;
+        }
+
+        .strategy-warning h5 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .strategy-warning ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .strategy-warning li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .strategy-warning li:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Pro Tip Section Styles */
+        .protip-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .protip-header {
+            text-align: center;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .protip-header h4 {
+            font-size: 1.3rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .institutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .institution-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .institution-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .institution-item h5 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .institution-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -1131,6 +1456,8 @@
                 </div>
             </form>
         </div>
+
+
 
         <!-- Cards Table -->
         <div class="table-section">
@@ -1340,6 +1667,75 @@
         </div>
         {% endif %}
 
+        <!-- Hide Utilization Mastery -->
+        {% if cards %}
+        <div class="education-section">
+            <h3>🎯 Hide Utilization Mastery</h3>
+            <div class="strategy-container">
+                <div class="strategy-header">
+                    <h4>💡 THIS IS THE AMOUNT OF MONEY YOU NEED BACK ON THE CREDIT CARD SO YOUR UTILIZATION WILL NOT GET AFFECTED</h4>
+                    <div class="amount-display">
+                        {% for card in cards %}
+                        <div class="card-amounts">
+                            <h5>{{ card.name }}</h5>
+                            <div class="critical-timing">
+                                <p><strong>Critical Timing: Pay by {{ card.dates.pay_by_date }} (3 days before cycle ends {{ card.dates.cycle_end }})</strong></p>
+                            </div>
+                            <div class="amount-grid">
+                                <div class="amount-item excellent">
+                                    <strong>For 10% Utilization: ${{ "{:,.2f}".format(card.available_balance.need_to_pay_10_percent) }}</strong>
+                                    <p>Pay this amount for EXCELLENT credit score</p>
+                                </div>
+                                <div class="amount-item warning">
+                                    <strong>For 30% Utilization: ${{ "{:,.2f}".format(card.available_balance.need_to_pay_30_percent) }}</strong>
+                                    <p>Pay this amount to stay below WARNING level</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="strategy-explanation">
+                    <div class="strategy-step">
+                        <h5>🔄 The Strategic Cycle</h5>
+                        <p>Once it gets reported to the credit bureaus and you see it's reporting properly and your utilization isn't affected, that cycle bill is paid and you can move on to the next month cycle.</p>
+                    </div>
+                    
+                    <div class="strategy-step">
+                        <h5>💳 Smart Credit Usage</h5>
+                        <p>You can now use that credit to run any plays <strong>BUT</strong> make sure you get that credit back on there before the next reporting/CYCLE END DATE for the NEXT cycle so your utilization will not get affected.</p>
+                    </div>
+                    
+                    <div class="strategy-step">
+                        <h5>♻️ Rinse and Repeat</h5>
+                        <p>This strategic timing allows you to maximize your credit usage while maintaining optimal credit scores. Follow this pattern every billing cycle for consistent results.</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-benefits">
+                    <h5>🎯 Why This Strategy Works</h5>
+                    <ul>
+                        <li><strong>Timing is Everything:</strong> Credit card companies report to credit bureaus around your statement closing date</li>
+                        <li><strong>Strategic Buffer:</strong> The 3-day buffer ensures your payment processes before reporting</li>
+                        <li><strong>Cyclical Usage:</strong> You can use credit again after reporting, then pay it down before the next cycle</li>
+                        <li><strong>Consistent Results:</strong> This pattern helps maintain low utilization while maximizing credit access</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-warning">
+                    <h5>⚠️ Important Notes</h5>
+                    <ul>
+                        <li>This strategy requires consistent cash flow to execute safely</li>
+                        <li>Always ensure you have the funds available before implementing</li>
+                        <li>Monitor your statements to confirm reporting dates and timing</li>
+                        <li>Keep utilization under 30% (ideally under 10%) for best results</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
         <!-- Monthly Timeline Section -->
         {% if cards %}
         <div class="education-section">
@@ -1404,6 +1800,204 @@
             {% endfor %}
         </div>
         {% endif %}
+
+        <!-- Advanced Strategy Section -->
+        <div class="education-section">
+            <h3>🚀 Advanced Hide Utilization Credit Mastery Strategy APP</h3>
+            
+            <div class="strategy-explanation">
+                <div class="strategy-header">
+                    <h4>💰 The Credit Float Strategy: Access Your Credit Without Hurting Your Score</h4>
+                    <p>This app shows you the exact dates to execute a powerful credit optimization technique used by credit experts.</p>
+                </div>
+                
+                <div class="strategy-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h5>📅 Wait for "Can Use Funds" Date</h5>
+                            <p>After the reporting date, credit bureaus have updated (usually 3-4 days later). This is when you can safely access your available credit without affecting your current credit score.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h5>💳 Use Your Available Credit</h5>
+                            <p>Now you can use the money on your credit card to:</p>
+                            <ul>
+                                <li>Transfer to another credit card</li>
+                                <li>Cover expenses or emergencies</li>
+                                <li>Make purchases you need</li>
+                                <li>Pay off higher-interest debt</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h5>⏰ Pay Back Before "Pay By Date"</h5>
+                            <p>This is the critical step! You must pay the card back down to your target utilization (1-10% for excellent score gains) by the "Pay By Date" - which is 3 days before the next reporting date.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h5>📊 Reporting Date Shows Low Utilization</h5>
+                            <p>When the reporting date arrives, credit bureaus will see your low utilization (not the high balance you temporarily had). Your credit score stays excellent!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h5>🔄 Repeat the Cycle</h5>
+                            <p>You can repeat this strategy every billing cycle, effectively giving you continuous access to credit without damaging your credit score. Remember: each billing cycle is a monthly cycle lasting between 28 and 31 days, representing the time between two statement closing dates.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                {% if cards %}
+                <div class="strategy-example">
+                    <h5>📈 Real Example from Your Table Above:</h5>
+                    <div class="example-timeline">
+                        <div class="timeline-item">
+                            <strong>{{ cards[0].dates.can_use_funds }}</strong> - Can Use Funds
+                            <br><small>✅ Safe to use your ${{ "{:,.2f}".format(cards[0].available_balance.actual_available) }} available balance</small>
+                        </div>
+                        <div class="timeline-arrow">→</div>
+                        <div class="timeline-item">
+                            <strong>{{ cards[0].dates.can_use_funds }} - {{ cards[0].dates.next_pay_by_date }}</strong> - Use Credit
+                            <br><small>💳 Transfer money, cover expenses</small>
+                        </div>
+                        <div class="timeline-arrow">→</div>
+                        <div class="timeline-item">
+                            <strong>{{ cards[0].dates.next_pay_by_date }}</strong> - Pay By Date
+                            <br><small>⏰ Pay back to low utilization</small>
+                        </div>
+                        <div class="timeline-arrow">→</div>
+                        <div class="timeline-item">
+                            <strong>{{ cards[0].dates.next_closing_date }}</strong> - Closing/Reporting Date
+                            <br><small>📊 Credit bureaus see low utilization</small>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="strategy-example">
+                    <h5>📈 Example Timeline (Add a card above to see your specific dates):</h5>
+                    <div class="example-timeline">
+                        <div class="timeline-item">
+                            <strong>Example Date</strong> - Can Use Funds
+                            <br><small>✅ Safe to use your available balance</small>
+                        </div>
+                        <div class="timeline-arrow">→</div>
+                        <div class="timeline-item">
+                            <strong>Cycle Period</strong> - Use Credit
+                            <br><small>💳 Transfer money, cover expenses</small>
+                        </div>
+                        <div class="timeline-arrow">→</div>
+                        <div class="timeline-item">
+                            <strong>Pay By Date</strong> - Pay By Date
+                            <br><small>⏰ Pay back to low utilization</small>
+                        </div>
+                        <div class="timeline-arrow">→</div>
+                        <div class="timeline-item">
+                            <strong>Closing Date</strong> - Closing/Reporting Date
+                            <br><small>📊 Credit bureaus see low utilization</small>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+                <div class="strategy-warning">
+                    <h5>⚠️ Important Notes:</h5>
+                    <ul>
+                        <li><strong>This requires discipline</strong> - You MUST pay back before the "Pay By Date"</li>
+                        <li><strong>Have the money ready</strong> - Don't use credit you can't pay back</li>
+                        <li><strong>Set reminders</strong> - Missing the "Pay By Date" will hurt your credit score</li>
+                        <li><strong>Track multiple cards</strong> - Each card has different reporting dates</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-benefits">
+                    <h5>🎯 Benefits of This Strategy:</h5>
+                    <ul>
+                        <li>Access to credit without credit score damage</li>
+                        <li>Ability to transfer balances between cards strategically</li>
+                        <li>Emergency fund access using available credit</li>
+                        <li>Maintain excellent credit scores while using credit</li>
+                        <li>Optimize credit utilization across multiple cards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pro Tip Section -->
+        {% if cards %}
+        <div class="education-section">
+            <h3>🏦 Pro Tip: Top Institutions for High Limit Credit Cards</h3>
+            <div class="protip-container">
+                <div class="protip-header">
+                    <h4>💡 These are the top institutions to start building relationships with that give you high limit credit cards</h4>
+                </div>
+                
+                <div class="institutions-grid">
+                    <div class="institution-item">
+                        <h5>🏆 Chase Bank</h5>
+                        <p>Known for premium rewards and high credit limits</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Bank of America</h5>
+                        <p>Strong relationship banking with limit increases</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Citibank</h5>
+                        <p>Generous credit limits and global acceptance</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Wells Fargo</h5>
+                        <p>High limits with banking relationship</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 U.S. Bank</h5>
+                        <p>Conservative but high limits for qualified customers</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Goldman Sachs</h5>
+                        <p>Premium products with substantial credit lines</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 PNC Bank</h5>
+                        <p>Strong regional presence with competitive limits</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Truist Bank</h5>
+                        <p>Growing institution with attractive credit offers</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Capital One</h5>
+                        <p>Data-driven approach with high approval rates</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 TD Bank</h5>
+                        <p>Customer-focused with flexible credit terms</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Discover</h5>
+                        <p>Excellent customer service and credit limit increases</p>
+                    </div>
+                    <div class="institution-item">
+                        <h5>🏆 Amex</h5>
+                        <p>Premium charge and credit cards with high limits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+
 
         <!-- Closing Date Education Section -->
         <div class="education-section">
@@ -1545,137 +2139,6 @@
         </div>
 
         <!-- Advanced Strategy Section -->
-        <div class="education-section">
-            <h3>🚀 Advanced Credit Mastery Strategy</h3>
-            
-            <div class="strategy-explanation">
-                <div class="strategy-header">
-                    <h4>💰 The Credit Float Strategy: Access Your Credit Without Hurting Your Score</h4>
-                    <p>This app shows you the exact dates to execute a powerful credit optimization technique used by credit experts.</p>
-                </div>
-                
-                <div class="strategy-steps">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h5>📅 Wait for "Can Use Funds" Date</h5>
-                            <p>After the reporting date, credit bureaus have updated (usually 3-4 days later). This is when you can safely access your available credit without affecting your current credit score.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h5>💳 Use Your Available Credit</h5>
-                            <p>Now you can use the money on your credit card to:</p>
-                            <ul>
-                                <li>Transfer to another credit card</li>
-                                <li>Cover expenses or emergencies</li>
-                                <li>Make purchases you need</li>
-                                <li>Pay off higher-interest debt</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h5>⏰ Pay Back Before "Pay By Date"</h5>
-                            <p>This is the critical step! You must pay the card back down to your target utilization (1-10% for excellent score gains) by the "Pay By Date" - which is 3 days before the next reporting date.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step-card">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h5>📊 Reporting Date Shows Low Utilization</h5>
-                            <p>When the reporting date arrives, credit bureaus will see your low utilization (not the high balance you temporarily had). Your credit score stays excellent!</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step-card">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h5>🔄 Repeat the Cycle</h5>
-                            <p>You can repeat this strategy every billing cycle, effectively giving you continuous access to credit without damaging your credit score. Remember: each billing cycle is a monthly cycle lasting between 28 and 31 days, representing the time between two statement closing dates.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                {% if cards %}
-                <div class="strategy-example">
-                    <h5>📈 Real Example from Your Table Above:</h5>
-                    <div class="example-timeline">
-                        <div class="timeline-item">
-                            <strong>{{ cards[0].dates.can_use_funds }}</strong> - Can Use Funds
-                            <br><small>✅ Safe to use your ${{ "{:,.2f}".format(cards[0].available_balance.actual_available) }} available balance</small>
-                        </div>
-                        <div class="timeline-arrow">→</div>
-                        <div class="timeline-item">
-                            <strong>{{ cards[0].dates.can_use_funds }} - {{ cards[0].dates.next_pay_by_date }}</strong> - Use Credit
-                            <br><small>💳 Transfer money, cover expenses</small>
-                        </div>
-                        <div class="timeline-arrow">→</div>
-                        <div class="timeline-item">
-                            <strong>{{ cards[0].dates.next_pay_by_date }}</strong> - Pay By Date
-                            <br><small>⏰ Pay back to low utilization</small>
-                        </div>
-                        <div class="timeline-arrow">→</div>
-                        <div class="timeline-item">
-                            <strong>{{ cards[0].dates.next_closing_date }}</strong> - Closing/Reporting Date
-                            <br><small>📊 Credit bureaus see low utilization</small>
-                        </div>
-                    </div>
-                </div>
-                {% else %}
-                <div class="strategy-example">
-                    <h5>📈 Example Timeline (Add a card above to see your specific dates):</h5>
-                    <div class="example-timeline">
-                        <div class="timeline-item">
-                            <strong>Example Date</strong> - Can Use Funds
-                            <br><small>✅ Safe to use your available balance</small>
-                        </div>
-                        <div class="timeline-arrow">→</div>
-                        <div class="timeline-item">
-                            <strong>Cycle Period</strong> - Use Credit
-                            <br><small>💳 Transfer money, cover expenses</small>
-                        </div>
-                        <div class="timeline-arrow">→</div>
-                        <div class="timeline-item">
-                            <strong>Pay By Date</strong> - Pay By Date
-                            <br><small>⏰ Pay back to low utilization</small>
-                        </div>
-                        <div class="timeline-arrow">→</div>
-                        <div class="timeline-item">
-                            <strong>Closing Date</strong> - Closing/Reporting Date
-                            <br><small>📊 Credit bureaus see low utilization</small>
-                        </div>
-                    </div>
-                </div>
-                {% endif %}
-                
-                <div class="strategy-warning">
-                    <h5>⚠️ Important Notes:</h5>
-                    <ul>
-                        <li><strong>This requires discipline</strong> - You MUST pay back before the "Pay By Date"</li>
-                        <li><strong>Have the money ready</strong> - Don't use credit you can't pay back</li>
-                        <li><strong>Set reminders</strong> - Missing the "Pay By Date" will hurt your credit score</li>
-                        <li><strong>Track multiple cards</strong> - Each card has different reporting dates</li>
-                    </ul>
-                </div>
-                
-                <div class="strategy-benefits">
-                    <h5>🎯 Benefits of This Strategy:</h5>
-                    <ul>
-                        <li>Access to credit without credit score damage</li>
-                        <li>Ability to transfer balances between cards strategically</li>
-                        <li>Emergency fund access using available credit</li>
-                        <li>Maintain excellent credit scores while using credit</li>
-                        <li>Optimize credit utilization across multiple cards</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 </html> 
